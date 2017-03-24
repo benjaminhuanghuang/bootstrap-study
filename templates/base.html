@@ -4,11 +4,13 @@
 
 {% block head %}
 {{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon_bootstrap.ico') }}" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 {% endblock %}
 
 {% block navbar %}
 {{ super() }}
+{% include 'nav.html' %}
 {% endblock %}
 
 {% block content %}

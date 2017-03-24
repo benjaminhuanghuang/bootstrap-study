@@ -3,6 +3,7 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import Form
 
 app = Flask(__name__)
+Bootstrap(app)
 
 app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
 
