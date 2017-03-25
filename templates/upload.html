@@ -9,7 +9,7 @@
     <h1>Bootstrap Progress Bar + jQuery + File upload</h1>
     <div class="container">
         <form action="{{ url_for("upload") }}" method=POST enctype="multipart/form-data">
-            <input type="file" id="media" id="media">
+            <input type="file" name="media" id="media">
             <input type="submit">
         </form>
     </div>
@@ -18,7 +18,7 @@
     </p>
     <div class="progress">
         <div id ='progressBar' class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-             style="width: 60%;">
+             style="width: 0%;">
             0%
         </div>
     </div>
