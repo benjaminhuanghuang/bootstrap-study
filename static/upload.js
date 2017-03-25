@@ -6,9 +6,9 @@ $(document).ready(function () {
 
         $.ajax({
             xhr: function () {
-                var xhr = new windows.XMLHttpRequest();
+                var xhr = new window.XMLHttpRequest();
                 xhr.upload.addEventListener('progress', function (e) {
-                    if (e.lengthComputalbe) {
+                    if (e.lengthComputable) {
                         console.log('Bytes loaded:' + e.loaded);
                         console.log('Totle Size:' + e.total);
                         console.log('Percentage Uploaded:' + (e.loaded / e.total));
